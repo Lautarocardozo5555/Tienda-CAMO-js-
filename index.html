@@ -5,10 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda CAMO</title>
     <script defer src="./js/main.js"></script>
+    <link rel="stylesheet" href="assets/style/style.css">
 
 </head>
 <body>
-<h1>Tienda CAMO</h1> 
-<p>Este simulador representa un pagina web que cree, tienda CAMO. Una tienda de ropa con diseños y estilos innovadores. Utilizando js podremos elegir productos con descuentos, indicar cantidades y seleccionar un método de pago. </p>
+    <header>
+        <img src="./assets/img/logo-camo.png" alt="Logo de Tienda CAMO">
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+<main>
+<p>Este simulador representa un pagina web que cree, tienda CAMO. Una tienda de ropa con diseños y estilos innovadores. Utilizando js podremos elegir productos con descuentos, indicar cantidades y seleccionar un método de pago.</p>
+<section id="productos">
+<!--renderizacion de productos-->
+</section>
+<!--agregando productos-->
+<section id="carrito-container">
+<h2>Carrito</h2>
+<ul id="carrito"></ul>
+<p id="total">Total: $0</p>
+<!--finalizando la compra-->
+<button id="pagar">Finalizar la compra</button>
+<p id="mensaje-compra"></p>
+<p id="instrucciones">Presiona la tecla F para ver productos con precio mayor a $5000. Presiona R para volver a ver todos.</p>
+</section>
+</main>
+<footer>
+    <p>&copy; 2026 Tienda CAMO - Todos los derechos reservados</p>
+</footer>
 </body>
 </html>
