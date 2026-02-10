@@ -298,8 +298,19 @@ document.addEventListener("keydown", (e) => {
         }, 3000);
     }
 });
-
+console.log(instrucciones)
 //inicializar
 renderizarProductos(productos);
 agregarProductos();
 actualizarCarrito();
+
+
+
+
+// menú hamburguesa
+const menuToggle = document.querySelector(".menu-toggle");
+const navMenu = document.querySelector("nav ul");
+
+menuToggle.addEventListener("click", () => {
+navMenu.classList.toggle("active");
+});

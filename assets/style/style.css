@@ -154,3 +154,64 @@ footer p {
     margin: 5px 0;
     color: white;
 }
+
+
+
+/*diseño responsive*/
+
+/*productos*/
+@media(max-widht:480px) {
+    .producto {
+        width: 100%;
+        max-width: 300px;
+
+    }
+}
+
+/*carrito*/
+@media (max-width: 600px) {
+#carrito-container {
+    width: 95%;
+    padding: 10px;
+}
+#carrito li {
+    flex-direction: column;
+    align-items: flex-start;
+}
+.eliminar {
+    margin-left: 0;
+    margin-top: 8px;
+}
+}
+
+/*header*/
+
+/* Desktop */
+.menu-toggle {
+display: none;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+nav ul {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    background: #333;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+nav ul.active {
+    display: flex;
+}
+
+.menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+}
+}
