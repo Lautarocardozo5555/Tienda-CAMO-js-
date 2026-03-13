@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const contenedorDeProductos = document.getElementById("productos");
 
     // ruta dinámica para el JSON
-    const basePath = window.location.pathname.includes("/page/")
+    const basePath = "/Tienda-CAMO-js-/assets/data/productos.json";
         ? "../assets/data/productos.json"
         : "assets/data/productos.json";
 
