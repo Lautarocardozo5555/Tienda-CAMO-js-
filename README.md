@@ -1,26 +1,25 @@
 # Tienda CAMO - Proyecto JavaScript
-
-Este proyecto es la **segunda entrega del curso de JavaScript**, donde se desarrolla una tienda online con productos dinámicos, integración de imágenes y estilos personalizados.
+Proyecto final del curso de **JavaScript**.  
+Simula un e-commerce con catálogo dinámico, carrito de compras y filtros.
 
 ## Características
-- Catálogo de productos con imágenes y descripciones.
-- Contadores dinámicos para seleccionar cantidad.
-- Botones de eliminación de productos.
-- Estilos personalizados con CSS.
-- Preparado para ampliaciones futuras (filtros, validaciones, formularios de contacto).
+- Catálogo de productos cargado desde un archivo JSON.
+- Carrito de compras con contador en el header.
+- Selección de talle y color antes de agregar al carrito.
+- Persistencia de datos con **localStorage**.
+- Filtros rápidos con teclado:
+  - `F` → mostrar productos con precio mayor a $5.000.
+  - `R` → resetear y mostrar todos los productos.
+- Animaciones y notificaciones con **Toastify** y **SweetAlert2**.
+- Menú hamburguesa responsive.
 
-## Estructura del proyecto
-- `index.html` → Página principal de la tienda.
-- `js/main.js` → Lógica en JavaScript para la interacción dinámica.
-- `assets/style/style.css` → Estilos personalizados.
-- `assets/img/` → Carpeta con imágenes de productos.
+## 🛠️ Tecnologías usadas
+- **HTML5 / CSS3**
+- **JavaScript (ES6+)**
+- **Toastify** (notificaciones)
+- **SweetAlert2** (alertas)
+- **Font Awesome** (iconos)
 
-## Demo online
-El proyecto está disponible en GitHub Pages:
- Ver Tienda CAMO (lautarocardozo55555.github.io in Bing)
-## Nota importante
-Algunos commits aparecen con el usuario Alexiscardozo4556 porque compartimos la misma PC y la configuración de Git estaba asociada a su cuenta en ese momento.
-El proyecto es íntegramente mío y está alojado en mi cuenta personal (Lautarocardozo55555).
 ## Autor
 o	Lautaro Gabriel Cardozo
 o	GitHub: @Lautarocardozo55555 
