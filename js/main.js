@@ -6,8 +6,13 @@ document.addEventListener("DOMContentLoaded", () => {
     // contenedor de productos
     const contenedorDeProductos = document.getElementById("productos");
 
+    // ruta dinámica para el JSON
+    const basePath = window.location.pathname.includes("/page/")
+        ? "../assets/data/productos.json"
+        : "assets/data/productos.json";
+
     // cargando productos desde JSON
-    fetch("/assets/data/productos.json") 
+    fetch(basePath)
         .then(response => response.json())
         .then(data => {
             productos = data;
@@ -47,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // renderizar productos en el DOM
     function renderizarProductos(array) {
-        if (!contenedorDeProductos) return; 
+        if (!contenedorDeProductos) return;
         contenedorDeProductos.innerHTML = "";
         array.forEach(producto => {
             let div = document.createElement("div");
@@ -110,7 +115,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // filtros con teclado
     document.addEventListener("keydown", (e) => {
         const instrucciones = document.getElementById("instrucciones");
-        if (!contenedorDeProductos) return; 
+        if (!contenedorDeProductos) return;
 
         if (e.key.toLowerCase() === "f") {
             const filtrados = productos.filter(producto => producto.precio > 5000);
@@ -137,4 +142,3 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
-
