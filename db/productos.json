@@ -1,32 +1,32 @@
 [
 {
     "id": 1,
-    "nombre": "Pantalon",
-    "precio": 10000,
-    "imagen": "assets/img/pantalonsastrero-camo.jpg"
+    "nombre": "Remera CAMO",
+    "precio": 4500,
+    "imagen": "../assets/img/remera-camo.jpg"
 },
 {
     "id": 2,
-    "nombre": "Remera",
-    "precio": 4500,
-    "imagen": "assets/img/remera-camo.jpg"
+    "nombre": "Pantalón CAMO",
+    "precio": 10000,
+    "imagen": "../assets/img/pantalonsastrero-camo.jpg"
 },
 {
     "id": 3,
-    "nombre": "Falda",
-    "precio": 6000,
-    "imagen": "assets/img/faldasastrera-camo.jpg"
+    "nombre": "Falda CAMO",
+    "precio": 8000,
+    "imagen": "../assets/img/faldasastrera-camo.jpg"
 },
 {
     "id": 4,
-    "nombre": "Guantes",
+    "nombre": "Guantes CAMO",
     "precio": 1500,
-    "imagen": "assets/img/guantes-camo.jpg"
+    "imagen": "../assets/img/guantes-camo.jpg"
 },
 {
     "id": 5,
-    "nombre": "Short",
-    "precio": 3500,
-    "imagen": "assets/img/shortsastrero-camo.jpg"
+    "nombre": "Short CAMO",
+    "precio": 6000,
+    "imagen": "../assets/img/shortsastrero-camo.jpg"
 }
 ]
