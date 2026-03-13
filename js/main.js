@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // contenedor de productos
     const contenedorDeProductos = document.getElementById("productos");
 
-    const URL = "../db/productos.json"
+    const URL = "./db/productos.json"
     function obtenerProductos () {
         fetch(URL)
         .then(response => response.json())
