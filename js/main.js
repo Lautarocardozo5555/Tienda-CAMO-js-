@@ -6,20 +6,18 @@ document.addEventListener("DOMContentLoaded", () => {
     // contenedor de productos
     const contenedorDeProductos = document.getElementById("productos");
 
-    // ruta dinámica para el JSON
-    const basePath = "/Tienda-CAMO-js-/assets/data/productos.json";
-        ? "../assets/data/productos.json"
-        : "assets/data/productos.json";
 
-    // cargando productos desde JSON
-    fetch(basePath)
+    const URL = "../db/productos.json"
+    function obtenerProductos () {
+        fetch(URL)
         .then(response => response.json())
         .then(data => {
-            productos = data;
-            renderizarProductos(productos);
-            actualizarContadorCarrito();
+            productos = data
+            renderizarProductos(productos)
+            actualizarContadorCarrito()
         })
-        .catch(error => console.error("Error cargando productos:", error));
+        .catch(error => console.error("Error cargando productos: ", error))
+    }
 
     // función para actualizar contador en el header
     function actualizarContadorCarrito() {
@@ -131,6 +129,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // inicializar
     renderizarProductos(productos);
     actualizarContadorCarrito();
+    obtenerProductos();
 
     // menú hamburguesa
     const menuToggle = document.querySelector(".menu-toggle");
