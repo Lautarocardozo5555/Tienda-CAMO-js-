@@ -6,7 +6,13 @@
     <title>Tienda CAMO</title>
     <script defer src="./js/main.js"></script>
     <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Toastify -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 
+<!-- SweetAlert2 -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
     <header>
@@ -14,32 +20,46 @@
         <button class="menu-toggle">☰</button>
         <nav>
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Productos</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Contactos</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="/page/productos.html">Productos</a></li>
+                <li><a href="/page/nosotros.html">Nosotros</a></li>
+                <li><a href="/page/contacto.html">Contactos</a></li>
+                <li><a href="/page/carrito.html" class="carrito-link"> <i class="fas fa-shopping-cart"></i><span id="contador-carrito">0</span></a></li>
             </ul>
         </nav>
     </header>
 <main>
-<p>
-Tienda CAMO es un simulador de e‑commerce desarrollado como parte de la segunda entrega del curso de JavaScript. 
-Permite explorar un catálogo de productos dinámico, agregar y eliminar artículos del carrito, calcular el total en tiempo real 
-y finalizar la compra con registro en historial. Además, incluye filtros interactivos mediante teclado y un diseño responsive 
-que se adapta a distintos dispositivos.
-</p>
-<section id="productos">
-<!--renderizacion de productos-->
+<section id="quienes-somos">
+<h1>Tienda CAMO</h1>
+<p>Este proyecto es parte de la segunda entrega del curso de JavaScript. 
+Simula un e-commerce con catálogo dinámico, carrito de compras y filtros.</p>
 </section>
-<!--agregando productos-->
-<section id="carrito-container">
-<h2>Carrito</h2>
-<ul id="carrito"></ul>
-<p id="total">Total: $0</p>
-<!--finalizando la compra-->
-<button id="pagar">Finalizar la compra</button>
-<p id="mensaje-compra"></p>
-<p id="instrucciones">Presiona la tecla F para ver productos con precio mayor a $5000. Presiona R para volver a ver todos.</p>
+
+<section id="quienes-somos">
+    <h2>¿Quiénes somos?</h2>
+    <p>Somos Tienda CAMO, una marca ficticia creada para aprender desarrollo web. 
+    Nuestro objetivo es brindar estilo y funcionalidad en cada prenda.</p>
+</section>
+    <h2>Ejemplos de productos</h2>
+<section id="muestras">
+    <div class="producto">
+    <img src="./assets/img/remera-camo.jpg" alt="Ejemplo remera" class="producto-img">
+    <h3>Remera de muestra</h3>
+    <p>$4.500</p>
+    <button class="agregar">Agregar al carrito</button>
+    </div>
+    <div class="producto">
+    <img src="./assets/img/pantalonsastrero-camo.jpg" alt="Ejemplo pantalón" class="producto-img">
+    <h3>Pantalón de muestra</h3>
+    <p>$10.000</p>
+    <button class="agregar">Agregar al carrito</button>
+    </div>
+        <div class="producto">
+    <img src="./assets/img/guantes-camo.jpg" alt="Ejemplo guantes" class="producto-img">
+    <h3>Guantes de muestra</h3>
+    <p>$1.500</p>
+    <button class="agregar">Agregar al carrito</button>
+    </div>
 </section>
 </main>
 <footer>

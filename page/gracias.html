@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gracias por su compra</title>
+    <link rel="stylesheet" href="../assets/style/style.css">
+    <script defer src="../js/gracias.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Toastify -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+<!-- SweetAlert2 -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+<header>
+        <img src="../assets/img/logo-camo.png" alt="Logo de Tienda CAMO">
+        <button class="menu-toggle">☰</button>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="/page/productos.html">Productos</a></li>
+                <li><a href="/page/nosotros.html">Nosotros</a></li>
+                <li><a href="/page/contacto.html">Contacto</a></li>
+                <li><a href="/page/carrito.html" class="carrito-link"> <i class="fas fa-shopping-cart"></i><span id="contador-carrito">0</span></a></li>
+            </ul>
+        </nav>
+</header>
+<main>
+<!-- Bloque de datos del comprador y mensaje -->
+<div class="section-box" id="mensaje"></div>
+
+<!-- Bloque de productos -->
+<div class="section-box">
+    <h2>Los productos elegidos son:</h2>
+    <section id="productos-comprados"></section>
+</div>
+
+<!-- Botones finales -->
+<div class="botones-finales">
+    <button id="descargar"><i class="fas fa-download"></i> Descargar Comprobante</button>
+    <a href="../index.html" class="btn-volver"><i class="fas fa-home"></i> Volver al inicio</a>
+</div>
+
+<!-- Bloque de feedback -->
+<div class="section-box" id="feedback">
+    <h2>Recibí tu comprobante por mail</h2>
+    <form id="feedback-form">
+<div class="input-group">
+        <i class="fas fa-envelope"></i>
+        <input type="email" id="correo" required placeholder="Tu correo">
+</div>
+
+<div class="input-group">
+        <i class="fas fa-comment"></i>
+        <textarea id="opinion" rows="3" placeholder="Escribe tu comentario..."></textarea>
+</div>
+
+<button type="submit">Enviar</button>
+    </form>
+</div>
+<section>
+    <h3>Últimos comentarios</h3>
+    <ul id="feedback-list"></ul>
+</section>
+</main>
+<footer>
+    <p>&copy; 2026 Tienda CAMO - Todos los derechos reservados</p>
+</footer>
+</body>
+</html>
+<main>

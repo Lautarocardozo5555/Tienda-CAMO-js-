@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto - Tienda CAMO</title>
+<link rel="stylesheet" href="../assets/style/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+<header>
+<img src="../assets/img/logo-camo.png" alt="Logo de Tienda CAMO">
+<button class="menu-toggle">☰</button>
+<nav>
+    <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="carrito.html" class="carrito-link"><i class="fas fa-shopping-cart"></i><span id="contador-carrito">0</span></a></li>
+    </ul>
+</nav>
+</header>
+
+<main>
+<section class="section-box">
+    <h1>Contacto</h1>
+    <p>¿Tenés dudas o querés dejarnos un mensaje? Completá el formulario y te responderemos a la brevedad.</p>
+    <form id="contact-form">
+    <div class="input-group">
+        <i class="fas fa-user"></i>
+        <input type="text" id="nombre" placeholder="Tu nombre" required>
+    </div>
+    <div class="input-group">
+        <i class="fas fa-envelope"></i>
+        <input type="email" id="email" placeholder="Tu correo" required>
+    </div>
+    <div class="input-group">
+        <i class="fas fa-comment"></i>
+        <textarea id="mensaje" rows="4" placeholder="Escribe tu mensaje..." required></textarea>
+    </div>
+        <button type="submit"><i class="fas fa-paper-plane"></i> Enviar</button>
+    </form>
+</section>
+
+<section class="section-box">
+    <h2>Información de contacto</h2>
+    <p><i class="fas fa-phone"></i> +54 9 351 6770681</p>
+    <p><i class="fas fa-envelope"></i> contacto@tiendacamo.com</p>
+    <p><i class="fas fa-map-marker-alt"></i> Córdoba, Argentina</p>
+</section>
+</main>
+
+<footer>
+<p>&copy; 2026 Tienda CAMO - Todos los derechos reservados</p>
+</footer>
+</body>
+</html>

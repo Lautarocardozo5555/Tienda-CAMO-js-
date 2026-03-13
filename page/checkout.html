@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Tienda CAMO</title>
+    <link rel="stylesheet" href="../assets/style/style.css">
+    <script defer src="../js/checkout.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Toastify -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+<!-- SweetAlert2 -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+        <header>
+        <img src="../assets/img/logo-camo.png" alt="Logo de Tienda CAMO">
+        <button class="menu-toggle">☰</button>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="/page/productos.html">Productos</a></li>
+                <li><a href="/page/nosotros.html">Nosotros</a></li>
+                <li><a href="/page/contacto.html">Contacto</a></li>
+                <li><a href="/page/carrito.html" class="carrito-link"> <i class="fas fa-shopping-cart"></i><span id="contador-carrito">0</span></a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <h1>Finalizar compra</h1>
+<main>
+    <!--datos personales-->
+        <form id="checkout-form">
+            <!-- Datos personales -->
+            <label for="nombre">Nombre Completo</label>
+            <input type="text" id="nombre" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+
+            <label for="direccion">Dirección</label>
+            <input type="text" id="direccion" required>
+
+            <label for="telefono">Teléfono</label>
+            <input type="text" id="telefono" required>
+
+            <!-- Selector de método de pago -->
+            <label for="metodo-pago">Método de pago</label>
+            <select id="metodo-pago" required>
+                <option value="">Selecciona una opción</option>
+                <option value="tarjeta">Tarjeta de crédito/débito</option>
+                <option value="transferencia">Transferencia bancaria</option>
+                <option value="qr">Pago con QR</option>
+            </select>
+
+            <!-- Tarjeta -->
+            <div id="pago-tarjeta" class="metodo" style="display:none;">
+                <label for="nombre-tarjeta">Nombre en la tarjeta</label>
+                <input type="text" id="nombre-tarjeta">
+
+                <label for="tarjeta">Número de tarjeta</label>
+                <input type="text" id="tarjeta" maxlength="16">
+
+                <label for="vencimiento">Fecha de vencimiento (MM/AA)</label>
+                <input type="text" id="vencimiento" placeholder="MM/AA">
+
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" maxlength="3">
+            </div>
+
+            <!-- Transferencia -->
+            <div id="pago-transferencia" class="metodo" style="display:none;">
+                <p>Alias para transferencia: <strong>tiendacamo.alias</strong></p>
+            </div>
+
+            <!-- QR -->
+            <div id="pago-qr" class="metodo" style="display:none;">
+                <p>Escaneá este código QR para pagar:</p>
+                <img src="../assets/img/qr-camo.png" alt="QR de pago" width="200">
+            </div>
+
+            <button type="submit">Pagar</button>
+        </form>
+
+</main>
+</body>
+</html>

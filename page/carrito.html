@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito - Tienda CAMO</title>
+    <script defer src="../js/carrito.js"></script>
+    <link rel="stylesheet" href="../assets/style/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <!-- Toastify -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+<!-- SweetAlert2 -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <header>
+        <img src="../assets/img/logo-camo.png" alt="Logo de Tienda CAMO">
+        <button class="menu-toggle">☰</button>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="/page/productos.html">Productos</a></li>
+                <li><a href="/page/nosotros.html">Nosotros</a></li>
+                <li><a href="/page/contacto.html">Contacto</a></li>
+                <li><a href="/page/carrito.html" class="carrito-link"> <i class="fas fa-shopping-cart"></i><span id="contador-carrito">0</span></a></li>
+            </ul>
+        </nav>
+    </header>
+    </header>
+    <main>
+
+<section id="carrito">
+    <h2>Carrito de compras</h2>
+    <ul id="lista-carrito">
+        <!-- Aquí se renderizan los productos del carrito -->
+    </ul>
+    <p id="total">Total: $0</p>
+    <div class="acciones-carrito">
+        <button id="vaciar">Vaciar carrito</button>
+        <button id="pagar">Finalizar compra</button>
+    </div>
+    <p id="mensaje-compra"></p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 Tienda CAMO - Todos los derechos reservados</p>
+</footer>
+</body>
+</html>
