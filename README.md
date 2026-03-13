@@ -13,7 +13,7 @@ Simula un e-commerce con catálogo dinámico, carrito de compras y filtros.
 - Animaciones y notificaciones con **Toastify** y **SweetAlert2**.
 - Menú hamburguesa responsive.
 
-## 🛠️ Tecnologías usadas
+## Tecnologías usadas
 - **HTML5 / CSS3**
 - **JavaScript (ES6+)**
 - **Toastify** (notificaciones)
