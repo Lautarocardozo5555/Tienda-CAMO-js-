@@ -126,7 +126,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // inicializar
-    renderizarProductos(productos);
     actualizarContadorCarrito();
     obtenerProductos();
 
